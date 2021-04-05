@@ -14,5 +14,5 @@ def main():
     solve(meal_cost, tip_percent, tax_percent)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
