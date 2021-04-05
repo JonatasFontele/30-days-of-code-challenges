@@ -2,7 +2,7 @@
 input_string = input()
 
 # Print a string literal saying "Hello, World." to stdout.
-print('Hello, World.')
+print("Hello, World.")
 
 # Prints the contents of input_string to stdout.
 print(input_string)
