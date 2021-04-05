@@ -6,9 +6,13 @@ def solve(meal_cost, tip_percent, tax_percent):
     print(round(total_cost))
 
 
-if __name__ == '__main__':
+def main():
     meal_cost = float(input())
     tip_percent = int(input())
     tax_percent = int(input())
 
     solve(meal_cost, tip_percent, tax_percent)
+
+
+if __name__ == '__main__':
+    main()
