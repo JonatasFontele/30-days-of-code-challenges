@@ -22,8 +22,6 @@ def main():
             contacts[name_number[0]] = name_number[1]
         query(contacts)
 
-    # arr = list(map(int, input().split()))
-
 
 if __name__ == "__main__":
     main()
