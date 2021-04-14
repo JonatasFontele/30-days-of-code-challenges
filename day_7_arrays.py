@@ -1,4 +1,5 @@
 def reverse(arr):
+    # string.join(iterable)
     print(' '.join(map(str, arr[::-1])))
 
 
@@ -14,6 +15,7 @@ def validate(n, arr):
 
 def main():
     n = int(input())
+    # map(function, iterables)
     arr = list(map(int, input().split()))
     validate(n, arr)
 
