@@ -5,9 +5,10 @@ class Person:
         self.id_number = id_number
 
     def print_person(self):
-        print("Name:", self.last_name + ",", self.first_name)
-        print("ID:", self.id_number)
-        # print(f"O {self.__nome} está comendo")
+        # print("Name:", self.last_name + ",", self.first_name)
+        # print("ID:", self.id_number)
+        print(f"Name: {self.last_name}, {self.first_name}")
+        print(f"ID: {self.id_number}")
 
 
 class Student(Person):
@@ -16,23 +17,19 @@ class Student(Person):
         self.scores = scores
 
     def calculate(self):
-        return sum(scores) / len(scores)
-
-# Class Constructor
-#
-#   Parameters:
-#   firstName - A string denoting the Person's first name.
-#   lastName - A string denoting the Person's last name.
-#   id - An integer denoting the Person's ID number.
-#   scores - An array of integers denoting the Person's test scores.
-#
-# Write your constructor here
-
-
-#   Function Name: calculate
-#   Return: A character denoting the grade.
-#
-# Write your function here
+        a = sum(self.scores) / len(self.scores)
+        if 90 <= a <= 100:
+            return "O"
+        elif 80 <= a < 90:
+            return "E"
+        elif 70 <= a < 80:
+            return "A"
+        elif 55 <= a < 70:
+            return "P"
+        elif 40 <= a < 55:
+            return "D"
+        elif a < 40:
+            return "T"
 
 
 def main():
