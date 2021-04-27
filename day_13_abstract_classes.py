@@ -1,6 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 
+# Abstract class
 class Book(object, metaclass=ABCMeta):
     def __init__(self, title, author):
         self.title = title
@@ -12,6 +13,7 @@ class Book(object, metaclass=ABCMeta):
         pass
 
 
+# Concrete class
 class MyBook(Book):
     def __init__(self, title, author, price):
         super().__init__(title, author)
