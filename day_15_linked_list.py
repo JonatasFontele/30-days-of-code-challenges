@@ -4,14 +4,17 @@ class Node:
         self.next = None
 
 
+# Linked list class without constructor
 class Solution:
-    def display(self, head):
+    @staticmethod
+    def display(head):
         current = head
         while current:
             print(current.data, end=' ')
             current = current.next
 
-    def insert(self, head, data):
+    @staticmethod
+    def insert(head, data):
         new_node = Node(data)
         if head is None:
             head = new_node
