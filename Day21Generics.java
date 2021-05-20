@@ -10,8 +10,7 @@ class Printer <T> {
     *    @param A generic array
     **/
     
-    @SuppressWarnings("hiding")
-	public<T> void printArray(T[] array) {
+	public static <T> void printArray(T[] array) {
         for (T element : array) {
             System.out.println(element);
         }
