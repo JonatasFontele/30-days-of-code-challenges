@@ -1,4 +1,5 @@
 def bubbleSort(n, a):
+    swaps_number = 0
     # Traverse through all array elements
     # range(n) also work but outer loop will repeat one time more than needed.
     for i in range(n - 1):
@@ -8,6 +9,12 @@ def bubbleSort(n, a):
             # Swap if the element found is greater than the next element
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
+                swaps_number += 1
+        if swaps_number == 0:
+            break
+    print(f"Array is sorted in {swaps_number} swaps.")
+    print("First Element:", a[0])
+    print("Last Element: %d" % a[n - 1])
 
 
 def main():
