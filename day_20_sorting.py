@@ -14,7 +14,7 @@ def bubbleSort(n, a):
             break
     print(f"Array is sorted in {swaps_number} swaps.")
     print("First Element:", a[0])
-    print("Last Element: %d" % a[n - 1])
+    print("Last Element: %d" % a[-1])
 
 
 def main():
