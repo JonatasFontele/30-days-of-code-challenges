@@ -25,7 +25,7 @@ class Solution:
             # Compute the depth of each subtree
             left_depth = self.getHeight(root.left)
             right_depth = self.getHeight(root.right)
-            # Use the larger one
+            # Use the larger one 
             if left_depth > right_depth:
                 return left_depth + 1
             else:
