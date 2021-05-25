@@ -15,7 +15,7 @@ class Calculator(AdvancedArithmetic):
                 # Otherwise print both
                 else:
                     sum += i
-                    sum += int(n / i)
+                    sum += n // i
         return sum
 
 
