@@ -1,6 +1,5 @@
 def first_ten_multiples(n):
-    for multiple in range(1, 11):
-        print("{} x {} = {}".format(n, multiple, n * multiple))
+    return [print(f"{n} x {multiple} = {n * multiple}") for multiple in range(1, 11)]
 
 
 def main():
