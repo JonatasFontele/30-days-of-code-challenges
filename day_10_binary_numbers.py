@@ -19,6 +19,7 @@ def convert(n, base):
     while n != 0:
         representation += str(n % base)
         n = int(n / base)
+    # return representation also works, but I wanted to keep the binary conversion correctly
     return representation[::-1]
     # representation = bin(n)
     # return representation[2::]
